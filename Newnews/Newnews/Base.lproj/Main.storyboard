@@ -98,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="5348" y="644.52773613193403"/>
         </scene>
-        <!--Title-->
+        <!--기사-->
         <scene sceneID="FwC-CM-Lxc">
             <objects>
                 <viewController id="t0a-NB-Oy8" sceneMemberID="viewController">
@@ -117,7 +117,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="bFM-ts-syc">
+                    <navigationItem key="navigationItem" title="기사" id="bFM-ts-syc">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="BYV-Ek-OHc">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vnK-YU-ik9">
                                 <rect key="frame" x="16" y="7" width="30" height="30"/>
@@ -128,18 +128,43 @@
                                 </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="bXz-yO-HgO">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GOm-7i-6Iu">
-                                <rect key="frame" x="329" y="7" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="다음"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="정보" id="Qae-hh-aDj">
+                            <connections>
+                                <segue destination="CvT-Kr-dzy" kind="show" id="qNO-rP-BQa"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYS-il-Hnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8215.2000000000007" y="-246.02698650674665"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HNB-Gu-LSE">
+            <objects>
+                <viewController id="CvT-Kr-dzy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3o1-G2-15c"/>
+                        <viewControllerLayoutGuide type="bottom" id="alq-2z-7rI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gZr-uh-Cir">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="[기사정보]  기자 : 김조한 신문사 : 동아일보 입력 : 2017.01.06 오전 10:24 최종수정 : 2017.01.06 오전 10:33 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wsq-l0-snn">
+                                <rect key="frame" x="0.0" y="113" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lt0-Bi-YXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9157.6000000000004" y="-246.02698650674665"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="edz-ND-GgO">
@@ -186,9 +211,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zIL-19-auJ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b5o-kl-NT4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="b5o-kl-NT4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -252,6 +278,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ey4-2R-mKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7276" y="458.32083958020991"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e8s-Q3-Jm5">
+            <objects>
+                <viewController id="4tm-qr-h1J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ysf-Xl-PJ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="JLU-JF-4CX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D2G-3q-MxH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoi-LP-0Wt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
