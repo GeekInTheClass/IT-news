@@ -616,10 +616,19 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="searchDisplayController" destination="xRX-lm-0ct" id="Lls-qV-WiR"/>
                         <segue destination="Axa-uy-wg9" kind="relationship" relationship="rootViewController" id="PJ3-o5-eb8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsX-lJ-Xlw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="xRX-lm-0ct">
+                    <connections>
+                        <outlet property="delegate" destination="ccW-ZU-Y7a" id="4o3-zZ-hgZ"/>
+                        <outlet property="searchContentsController" destination="ccW-ZU-Y7a" id="wKK-Ih-39P"/>
+                        <outlet property="searchResultsDataSource" destination="ccW-ZU-Y7a" id="RXA-2C-zOX"/>
+                        <outlet property="searchResultsDelegate" destination="ccW-ZU-Y7a" id="jYr-o8-Yb5"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="6285.6000000000004" y="1365.9670164917543"/>
         </scene>
